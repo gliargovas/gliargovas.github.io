@@ -5,4 +5,15 @@
 "Kotti":
   - firstname: ["Zoi", "Zoe", "Z."]
     url: https://zkotti.github.io
-    
+
+"Kallas":
+  - firstname: ["Konstantinos", "K."]
+    url: https://angelhof.github.io/
+
+"Vasilakis":
+  - firstname: ["Nikos", "N."]
+    url: http://nikos.vasilak.is/
+
+"Greenberg":
+  - firstname: ["Michael", "M."]
+    url: https://mgree.github.io/
