@@ -2,7 +2,8 @@ github_users:
   - gliargovas
 
 github_repos:
+  - binpash/try
+  - binpash/pash
   - gliargovas/python-exam-generator
-  - gliargovas/applied-software-engineering-assignments
-  - binpash/pash 
-  - gliargovas/AML_2021_Assignments
+  # - gliargovas/applied-software-engineering-assignments 
+  # - gliargovas/AML_2021_Assignments
