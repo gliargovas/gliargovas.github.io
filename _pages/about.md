@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Researcher, AUEB, Athens, Greece
+subtitle: Student, Researcher, Software Engineer, AUEB, Athens, Greece
 
 profile:
   align: right
