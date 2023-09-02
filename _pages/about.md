@@ -19,7 +19,6 @@ I hold a Bachelor's Degree from the <a href='https://www.dept.aueb.gr/en/dmst'>D
 
 I spent last year as a **research affiliate** at the <a href="https://cs.brown.edu/">Computer Science Department </a> of **Brown University**, working on the <a href='https://binpa.sh'>PaSh</a> project, a shell-script parallelization project hosted by the <a href="https://www.linuxfoundation.org/press/press-release/linux-foundation-to-host-the-pash-project-accelerating-shell-scripting-with-automated-parallelization-for-industrial-use-cases">Linux Foundation</a>, under the supervision of Prof. <a href='http://nikos.vasilak.is/'>Nikos Vasilakis</a>. I continue to actively work on PaSh.
 
-🎓 I'm excitedly gearing up to **apply for PhD programs this fall**. Looking forward to diving deeper into research and making meaningful contributions.
 
 My **research interests** encompass a wide range of topics. My interest on **computer systems** delves into areas like distributed systems, scheduling, concurrency, file systems, and kernel-level programming. I have also conducted research related to **empirical software engineering**, focusing in mining software repositories, software analytics, and CS education. Additionally, I have explored **programming languages** a bit, with emphasis on compilers and program analysis. I've crossed paths with **machine learning** on multiple occasions. While I've yet to integrate it into my current research, I'm intrigued by its potential to supercharge the outcomes of the fields above.
 
