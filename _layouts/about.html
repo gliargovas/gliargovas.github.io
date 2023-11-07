@@ -48,12 +48,11 @@ layout: default
             <!-- Selected papers -->
             {%- include selected_papers.html %}
           {%- endif %}
-          {%- if page.social %}
-          <!-- Services Section -->
-            {% if page.service -%}
+            <!-- Services Section -->
             {%- include service.html %}
-          {%- endif %}
           <!-- Social -->
+          {%- if page.social %}
+         
           <div class="social">
             <div class="contact-icons">
             {% include social.html %}
