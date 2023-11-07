@@ -1,22 +1,32 @@
 <!-- service.html -->
-<div class="service">
-    <h2>Service</h2>
+<div class="services">
+    <h2>Our Services</h2>
     {% if site.data.service != blank -%}
-      <div class="row">
-        {% for service in site.data.service %}
-          <div class="col-md-12 col-lg-4 mb-4">
-            <div class="service-item border p-3">
-              <div class="service-venue">
-                <h3 class="service-title">{{ service.title }}</h3>
-              </div>
-              <div class="service-description mt-2">
-                <p>{{ service.description }}</p>
-              </div>
-            </div>
+    <div class="row">
+      {% for service in site.data.service %}
+        <div class="col-sm-2">
+          <!-- Service Tag similar to Venue Abbr -->
+          <div class="badge" style="background-color:{{ service.color }};">
+            {{ service.tag }}
           </div>
-        {% endfor %}
-      </div>
+        </div>
+  
+        <!-- Service Title and Description -->
+        <div class="col-sm-8">
+          <!-- Title -->
+          <div class="title">{{ service.title }}</div>
+          <!-- Description -->
+          <div class="description">{{ service.description }}</div>
+        </div>
+  
+        <!-- Additional Service Details -->
+        <div class="col-sm-2">
+          <!-- You can add additional details here similar to bib layout 'bib key' if needed -->
+        </div>
+      {% endfor %}
+    </div>
     {%- else -%}
-    <p>No service to display yet.</p>
+    <p>No services to display yet.</p>
     {%- endif %}
-</div>
+  </div>
+  
