@@ -1,31 +1,31 @@
-          
-          <div class="news">
-            <h2>Recent news</h2>
-            {% if site.news != blank -%} 
-            {%- assign news_size = site.news | size -%}
-            <div class="table-responsive" {% if site.news_scrollable and news_size > 3 %}style="max-height: 10vw"{% endif %}>
-              <table class="table table-sm table-borderless" style="height:10px">
-              {%- assign news = site.news | reverse -%}
-              {% if site.news_limit %}
-              {% assign news_limit = site.news_limit %}
-              {% else %}
-              {% assign news_limit = news_size %}
-              {% endif %}
-              {% for item in news limit: news_limit %} 
-                <tr>
-                  <th width="13%" scope="row" style="font-size:14px">{{ item.date | date: "%b. %Y" }}</th>
-                  <td width="87%">
-                    {% if item.inline -%} 
-                      {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-                    {%- else -%} 
-                      <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-                    {%- endif %} 
-                  </td>
-                </tr>
-              {%- endfor %} 
-              </table>
-            </div>
+<div class="news">
+  <h2 id="recent-news">Recent news</h2>
+  <hr style="border-width: 2px;">
+  {% if site.news != blank -%}
+  {%- assign news_size = site.news | size -%}
+  <div class="table-responsive" {% if site.news_scrollable and news_size > 4 %}style="max-height: 180px;"{% endif %}>
+    <table class="table table-sm table-borderless" style="height:230px;"> <!-- Fixed height specified here -->
+    {%- assign news = site.news | reverse -%}
+    {% if site.news_limit %}
+    {% assign news_limit = site.news_limit %}
+    {% else %}
+    {% assign news_limit = news_size %}
+    {% endif %}
+    {% for item in news limit: news_limit %}
+      <tr>
+        <th width="13%" scope="row" style="font-size:14px">{{ item.date | date: "%b. %Y" }}</th>
+        <td width="87%">
+          {% if item.inline -%}
+            {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
           {%- else -%} 
-            <p>No news so far...</p>
+            <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
           {%- endif %} 
-          </div>
+        </td>
+      </tr>
+    {%- endfor %}
+    </table>
+  </div>
+  {%- else -%}
+    <p>No news so far...</p>
+  {%- endif %}
+</div>

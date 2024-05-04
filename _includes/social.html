@@ -23,7 +23,7 @@
             <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIn"><i class="fab fa-2 fa-linkedin fa-xs"></i></a>
             {% endif %}
             {%- if site.twitter_username -%}
-            <a href="https://twitter.com/{{ site.twitter_username }}" title="Twitter"><i class="fab fa-2 fa-xs fa-twitter"></i></a>
+            <a href="https://twitter.com/{{ site.twitter_username }}" title="Twitter"><i class="fa-brands fa-x-twitter fa-xs"></i></a>
             {% endif %}
             {%- if site.medium_username -%}
             <a href="https://medium.com/@{{ site.medium_username }}" title="Medium"><i class="fab fa-2 fa-xs fa-medium"></i></a>
@@ -40,8 +40,8 @@
             {%- if site.wikidata_id -%}
             <a href="https://www.wikidata.org/wiki/{{ site.wikidata_id }}" title="Wikidata"><i class="fas fa-barcode"></i></a>
             {% endif %}
-            {%- if true -%}
-            <a href="https://www.strava.com/athletes/56433360" title="Strava"><i class="fab fa-strava fa-xs"></i></a>
+            {%- if site.strava -%}
+            <a href="https://www.strava.com/athletes/{{  site.strava  }}" title="Strava"><i class="fab fa-strava fa-xs"></i></a>
             {% endif %}
             {%- if site.keybase_username -%}
             <a href="https://keybase.io/{{ site.keybase_username }}" title="Keybase"><i class="fab fa-keybase"></i></a>

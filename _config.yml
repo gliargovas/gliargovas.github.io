@@ -24,7 +24,7 @@ impressum_path:  # set to path to include impressum link in the footer, use the 
 # -----------------------------------------------------------------------------
 
 # code highlighter theme
-highlight_theme_light: github   # https://github.com/jwarby/jekyll-pygments-themes
+highlight_theme_light: emacs   # https://github.com/jwarby/jekyll-pygments-themes
 highlight_theme_dark: native    # https://github.com/jwarby/jekyll-pygments-themes
 
 # repo color theme
@@ -42,6 +42,8 @@ rss_icon: false
 # -----------------------------------------------------------------------------
 # Layout
 # -----------------------------------------------------------------------------
+
+disable_header: true
 
 navbar_fixed: true
 footer_fixed: true
@@ -69,7 +71,7 @@ twitter_username: gliargko
 linkedin_username: george-liargovas-796259175
 scholar_userid: 1va1OI8AAAAJ
 semanticscholar_id: # your Semantic Scholar ID
-orcid_id: 0000-0002-8896-4044
+_id: # 0000-0002-8896-4044
 medium_username: # your Medium username
 quora_username: # your Quora username
 publons_id: # your ID on Publons
@@ -78,18 +80,18 @@ blogger_url: # your blogger URL
 work_url: # work page URL
 keybase_username: # your keybase user name
 wikidata_id: # your wikidata id
-dblp_url: https://dblp.org/pid/309/7351.html # your DBLP profile url
+dblp_url: # https://dblp.org/pid/309/7351.html # your DBLP profile url
 stackoverflow_id: # your stackoverflow id
 kaggle_id: # your kaggle id
 lastfm_id: # your lastfm id
-spotify_id: 5tjsyyq952wsk4sm0sbog24yu?si=1428e01efca14d7b # your spotify id
+spotify_id: # 5tjsyyq952wsk4sm0sbog24yu?si=1428e01efca14d7b # your spotify id
 pinterest_id: # your pinterest id
 unsplash_id: # your unsplash id
 instagram_id: # your instagram id
 facebook_id: # your facebook id
 discord_id: # your discord id (18-digit unique numerical identifier)
-contact_note: "Feel free to reach out for any inquiry & idea.<br><i class=\"fas fa-envelope\"></i><span style=\"font-size:15px\"> <b>gliargovas</b> at <b>aueb</b> dot <b>gr</b></span>"
-
+strava: 56433360
+contact_note:
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
 # -----------------------------------------------------------------------------
@@ -104,10 +106,10 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-# blog_name: al-folio # blog_name will be displayed in your blog page
-# blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
-# blog_description: a simple whitespace theme for academics
-# permalink: /blog/:year/:title/
+blog_name: Georgios's Blog # blog_name will be displayed in your blog page
+blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
+blog_description: Under Construction... stay tuned!
+permalink: /blog/:year/:title/
 
 # Pagination
 # pagination:
@@ -138,7 +140,7 @@ collections:
     output: true
     permalink: /projects/:path/
 
-news_scrollable: false # adds a vertical scroll bar if there are more than 3 news items
+news_scrollable: true # adds a vertical scroll bar if there are more than 4 news items
 news_limit: 8 # leave blank to include all the news in the `_news` folder
 
 # -----------------------------------------------------------------------------
@@ -317,8 +319,8 @@ bootstrap:
     css: "sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY="
     js: "sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8="
 fontawesome:
-  version: "5.15.4"
-  integrity: "sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4="
+  version: "6.5.2"
+  # integrity: "sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4="
 jquery:
   version: "3.6.0"
   integrity: "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
