@@ -23,6 +23,10 @@ layout: default
     margin-right: 500px;
   }
 
+  .fix-dims {
+    width: calc(50% + 300px);
+  }
+
   .content {
     margin-left: calc(50% - 150px); /* Aligns the start of the content */
     width: calc(50% + 300px); /* Adjusts content width */
@@ -130,6 +134,7 @@ document.addEventListener('DOMContentLoaded', function() {
       <br>
     </div>
   </div>
+  <div class="fix-dims">
   <article class="content">
     <section id="aboutme">
       {{ content }}
@@ -151,6 +156,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {% include personal.html %}
       </section>
   </article>
+</div>
 </div>
 
 <script>
