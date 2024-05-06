@@ -9,7 +9,8 @@ nav_order: 1
 ---
 <style>
     .fix-dims {
-        margin-left: 290px
+        margin-left: 270px;
+        margin-top: 0px
     }
 
     .calendar {
