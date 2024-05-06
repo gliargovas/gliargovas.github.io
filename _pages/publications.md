@@ -9,7 +9,7 @@ nav_order: 1
 ---
 
 
-<div class="publications" style="padding-left: 20px; margin-left:0; width: calc(50%)">
+<div class="publications" style="padding-left: 20px; margin-left:0; width: calc(80%)">
   <article class="content" style="width: calc(150%); padding-left:0; ">
     <h2>Publications<h2>
     {%- for year in page.years %}

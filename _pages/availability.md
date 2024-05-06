@@ -14,6 +14,7 @@ nav_order: 1
         border-radius: 1%;
         border-color: white;
         width: 100%; /* Ensures the iframe takes the full width of its container */
+        height: 500px
     }
 </style>
 
