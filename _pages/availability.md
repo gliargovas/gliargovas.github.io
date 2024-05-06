@@ -18,7 +18,7 @@ nav_order: 1
     }
 </style>
 
-<article class="content" style="width: calc(100%); padding-left:0; margin-left:0px">
+<article class="content" style="width: calc(150%); padding-left:0; margin-left:0px">
     <h2>Availability</h2>
     <hr style="border-width:2px;">
     I understand that coordinating schedules can be challenging, so I've provided my availability calendar below, which I regularly update to facilitate the scheduling process for both of us. Please feel free to propose a time that works best for you, and I will do my utmost to accommodate it. I'm looking forward to our conversation!
