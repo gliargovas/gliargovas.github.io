@@ -1,0 +1,56 @@
+<style>
+.active-permalink {
+    color: black; /* Example: making the active link text black */
+    font-weight: bold; /* Making the text bold */
+    text-decoration: none; /* Removing underline from the link */
+}
+</style>
+
+<!-- profile-details.html -->
+<div class="profile-details">
+    <b><b>he/him</b> or they/them<br>
+    <b>Incoming PhD</b> @ <a href='https://cs.columbia.edu/'>Columbia</a><br>
+    <b>Member of:</b><br>
+    - <a href='https://atlas-group.cs.brown.edu/'>Atlas Group</a> @ <a href='https://cs.brown.edu/'>Brown</a><br>
+    - <a href='https://www.balab.aueb.gr'>BALab</a> @ <a href='https://www.dept.aueb.gr/en/dmst'>AUEB</a><br>
+    📍 CIT 409<br>
+    📧 <a id='email-link' href='#' onclick='event.preventDefault();'>Email me</a><br>
+    🔑 <a href='/assets/ssh'>ssh</a> and <a href='/assets/gpg'>gpg</a> public keys<br>
+    <br>
+    📄 <a href='/assets/pdf/LiargkovasGeorgiosCV.pdf'>Curriculum Vitae</a><br>
+    <br>
+    <!-- Adding navigation links below the email -->
+    <div class="mini-nav">
+        <div class="mini-nav">
+            <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}active-permalink{% endif %}">About</a> |
+            <a href="{{ '/publications/' | relative_url }}" class="{% if page.url == '/publications/' %}active-permalink{% endif %}">Publications</a> |
+            <a href="{{ '/blog/' | relative_url }}" class="{% if page.url == '/blog/' %}active-permalink{% endif %}">Blog</a>
+            <a href="{{ '/availability/' | relative_url }}" class="{% if page.url == '/availability/' %}active-permalink{% endif %}">Meeting Availability</a>
+        </div>
+        {% if page.permalink == '/' -%}
+        <br>
+        <!-- <a href="#aboutme" data-target="aboutme">About me</a> |
+        <a href="#news" data-target="news">News</a> |
+        <a href="#research" data-target="research">Research</a>
+        <a href="#tools" data-target="tools">Tools</a> |
+        <a href="#select" data-target="select">Select&nbsp;Pubs</a> |
+        <a href="#personal" data-target="personal">Personal</a> -->
+        {% endif %}
+    </div>
+</div>
+<br>
+
+
+<script type='text/javascript'>
+    document.addEventListener('DOMContentLoaded', function() {
+        var user = 'g.liargkovas';
+        var domain = 'columbia.edu';
+        var element = document.getElementById('email-link');
+        element.href = 'mailto:' + user + '@' + domain;
+        element.innerText = user + '@' + domain;
+        element.onclick = function(event) {
+            event.preventDefault();
+        };
+    });
+
+</script>
