@@ -4,28 +4,36 @@
     font-weight: bold; /* Making the text bold */
     text-decoration: none; /* Removing underline from the link */
 }
+
+.small-gap {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important; /* Adjust this value to control the gap */
+}
+
 </style>
 
 <!-- profile-details.html -->
 <div class="profile-details">
     <b><b>he/him</b> or they/them<br>
-    <b>Incoming PhD</b> @ <a href='https://cs.columbia.edu/'>Columbia</a><br>
+    <b>Incoming PhD</b><span style="margin-right:6px">&nbsp;</span><span style="margin-right:6px">&nbsp;</span>@ <a href='https://cs.columbia.edu/'>Columbia</a><br>
     <b>Member of:</b><br>
-    - <a href='https://atlas-group.cs.brown.edu/'>Atlas Group</a> @ <a href='https://cs.brown.edu/'>Brown</a><br>
-    - <a href='https://www.balab.aueb.gr'>BALab</a> @ <a href='https://www.dept.aueb.gr/en/dmst'>AUEB</a><br>
+    -<span style="margin-right:6px">&nbsp;</span><a href='https://atlas-group.cs.brown.edu/'>Atlas Group</a> @ <a href='https://cs.brown.edu/'>Brown</a><br>
+    -<span style="margin-right:6px">&nbsp;</span><a href='https://www.balab.aueb.gr'>BALab</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@ <a href='https://www.dept.aueb.gr/en/dmst'>AUEB</a><br>
     📍 CIT 409<br>
     📧 <a id='email-link' href='#' onclick='event.preventDefault();'>Email me</a><br>
     🔑 <a href='/assets/ssh'>ssh</a> and <a href='/assets/gpg'>gpg</a> public keys<br>
-    <br>
-    📄 <a href='/assets/pdf/LiargkovasGeorgiosCV.pdf'>Curriculum Vitae</a><br>
-    <br>
-    <!-- Adding navigation links below the email -->
+
+    <p class="small-gap"><a href='/assets/pdf/LiargkovasGeorgiosCV.pdf'>📄 Curriculum Vitae</a></p>
+
+    <p class="small-gap"><i class="fa fa-blog" style="margin-right:1px"></i>&nbsp;<a href="{{ '/blog/' | relative_url }}" class="{% if page.url == '/blog/' %}active-permalink{% endif %}">Blog</a></p>
+
     <div class="mini-nav">
         <div class="mini-nav">
             <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}active-permalink{% endif %}">About</a> |
             <a href="{{ '/publications/' | relative_url }}" class="{% if page.url == '/publications/' %}active-permalink{% endif %}">Publications</a> |
-            <a href="{{ '/blog/' | relative_url }}" class="{% if page.url == '/blog/' %}active-permalink{% endif %}">Blog</a>
-            <a href="{{ '/availability/' | relative_url }}" class="{% if page.url == '/availability/' %}active-permalink{% endif %}">Meeting Availability</a>
+
+            <a href="{{ '/availability/' | relative_url }}" class="{% if page.url == '/availability/' %}active-permalink{% endif %}">Schedule</a>
+
         </div>
         {% if page.permalink == '/' -%}
         <!-- <a href="#aboutme" data-target="aboutme">About me</a> |
