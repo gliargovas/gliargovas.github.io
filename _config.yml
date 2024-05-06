@@ -43,7 +43,7 @@ rss_icon: false
 # Layout
 # -----------------------------------------------------------------------------
 
-disable_header: true
+disable_header: false
 
 navbar_fixed: true
 footer_fixed: true
@@ -106,7 +106,7 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Georgios's Blog # blog_name will be displayed in your blog page
+blog_name: At Runtime # blog_name will be displayed in your blog page
 blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
 blog_description: Under Construction... stay tuned!
 permalink: /blog/:year/:title/
@@ -218,7 +218,7 @@ jekyll-archives:
     tag: '/blog/tag/:name/'
     category: '/blog/category/:name/'
 
-display_tags: ['formatting', 'images', 'links', 'math', 'code'] # this tags will be dispalyed on the front page of your blog
+display_tags: [] # this tags will be dispalyed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar

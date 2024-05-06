@@ -1,49 +1,89 @@
+<style>
+  @keyframes runAcross {
+      0% { left: 0; opacity: 1; }
+      80% { left: 30%; opacity: 1; } /* 500px without fading */
+      100% { left: 35%; opacity: 0; } /* Fades away in the next 50px */
+  }
 
-    <header>
-      {%- if site.disable_header == "true" -%}
-      <!-- Nav Bar -->
-      <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}">
-        <div class="container">
-          {% if page.permalink != '/' -%}
-          <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
-              {%- if site.first_name -%}
-          <span class="font-weight-bold">{{- site.first_name -}}&nbsp;</span>
-              {%- endif -%}
-              {%- if site.middle_name -%}
-          {{- site.middle_name -}}&nbsp;
-              {%- endif -%}
-              {%- if site.last_name -%}
-          {{- site.last_name -}}
-              {%- endif -%}
-          </a>
-          {%- endif -%}
+  #running-emoji, #laptop-emoji {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      display: none;
+      animation-duration: 3s;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
+  }
 
-          <!-- Navbar Toggle -->
-          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar top-bar"></span>
-            <span class="icon-bar middle-bar"></span>
-            <span class="icon-bar bottom-bar"></span>
-          </button>
+  #running-emoji {
+      transform: translateY(-50%) scaleX(-1); /* Mirror the runner */
+  }
+</style>
 
-          <!--Right Aligned Nav Links-->
-          <div class="navbar-collapse collapse show justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-              <!-- About -->
-              <li class="nav-item {% if page.url == '/' %}active{% endif %}">
-          <a class="nav-link" href="{{ '/' | relative_url }}">About</a>
-              </li>
-              <!-- Publications -->
-              <li class="nav-item {% if page.url contains '/publications/' %}active{% endif %}">
-          <a class="nav-link" href="{{ '/publications/' | relative_url }}">Publications</a>
-              </li>
-              <!-- Blog -->
-              <li class="nav-item {% if page.url contains '/blog/' %}active{% endif %}">
-          <a class="nav-link" href="{{ '/blog/' | relative_url }}">Blog</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      {%- endif -%}
-    </header>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      var navbar = document.getElementById('navbar');
+      var runner = document.getElementById('running-emoji');
+      var laptop = document.getElementById('laptop-emoji');
+      var emojis = [runner, laptop]; // Array of emojis
+
+      navbar.addEventListener('mouseenter', function() {
+          if (Math.random() < 0.5) { // 50% chance to activate the emoji
+              var selectedEmoji = emojis[Math.floor(Math.random() * emojis.length)]; // Randomly pick an emoji
+              selectedEmoji.style.display = 'block'; // Show the selected emoji
+              selectedEmoji.style.animationName = ''; // Reset animation
+              setTimeout(function() { // Timeout to ensure animation can reset
+                  selectedEmoji.style.animationName = 'runAcross'; // Apply the animation
+              }, 10);
+
+              // Hide the emoji that is not selected
+              emojis.forEach(emoji => {
+                  if (emoji !== selectedEmoji) {
+                      emoji.style.display = 'none'; // Hide the other emoji
+                  }
+              });
+          }
+      });
+  });
+  </script>
+
+
+<header>
+  {% if page.url contains '/blog' %}
+  <!-- Nav Bar -->
+  <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}"
+  style="padding-top:0px; padding-bottom:0px;"
+  >
+    <div class="container">
+      <!-- Navbar Brand for Blog Title and Name -->
+      <!-- Hidden Emoji for Animation -->
+      <span id="running-emoji" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%) scaleX(-1); display: none;">🏃‍♂️</span>
+      <span id="laptop-emoji" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%); display: none;">💻</span>
+
+      <a class="navbar-brand title font-weight-lighter" href="{{ '/blog' | relative_url }}">
+          <span style="font-weight: bold; font-size:28px">{{ site.blog_name | default: 'Blog' }}</span>
+          <span style="font-size: small; vertical-align: super;"> by {{ site.first_name | default: '' }} {{ site.last_name | default: '' }}</span>
+      </a>
+
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span the="icon-bar bottom-bar"></span>
+      </button>
+
+      <!-- Right Aligned Nav Links -->
+      <div class="navbar-collapse collapse show justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <!-- Home Link -->
+          <li class="nav-item {% if page.url == '/' %}active{% endif %}">
+            <a class="nav-link" href="{{ '/' | relative_url }}"><i class="fa fa-home"></i></a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  {% endif %}
+</header>

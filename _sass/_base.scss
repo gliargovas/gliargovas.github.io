@@ -481,6 +481,13 @@ footer.sticky-bottom {
     margin-bottom: -2rem;
     text-align: right;
   }
+
+  .badge {
+    color: var(--global-text-color);
+    background-color: var(--global-theme-color);
+    min-width: 68px;
+  }
+
   ol.bibliography {
     list-style: none;
     padding: 0;
