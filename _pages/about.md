@@ -18,7 +18,7 @@ social: true  # includes social icons at the bottom of the page
 <h2 id="select-publications">About me</h2>
 <hr style="border-width: 2px;">
 
-📰 **Latest Update:** I will be joining the Computer Science Department at [Columbia University](https://www.cs.columbia.edu/) as a PhD student, advised by [Prof. Kostis Kaffes](https://www.cs.columbia.edu/~kkaffes/index.html)!
+<!-- 📰 **Latest Update:** I will be joining the Computer Science Department at [Columbia University](https://www.cs.columbia.edu/) as a PhD student, advised by [Prof. Kostis Kaffes](https://www.cs.columbia.edu/~kkaffes/index.html)! -->
 
 <!-- I will focus on the integration of machine learning techniques into operating system scheduling and cloud computing. -->
 
