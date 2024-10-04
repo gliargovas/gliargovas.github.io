@@ -8,15 +8,16 @@
 
 <!-- profile-details.html -->
 <div class="profile-details">
-    <b><b>he/him</b> or they/them<br>
-    <b>PhD Student </b> @ <a href='https://cs.columbia.edu/'>Columbia</a><img src="assets/img/columbia-icon.png" alt="Columbia Icon" style="width:16px; height:16px; vertical-align:middle;"><br>
+    <b><b>PhD Student </b> @ <a href='https://cs.columbia.edu/'>Columbia</a><br>
+
     <b>Member of:</b><br>
-    - <a href=''>Nebula </a> @ <a href='https://www.cs.columbia.edu/'>Columbia</a><br>
-    - <a href='https://www.balab.aueb.gr'>BALab</a> @ <a href='https://www.dept.aueb.gr/en/dmst'>AUEB</a><br>
+    <img src="/assets/img/columbia-icon.png" alt="Columbia Icon" style="width:16px; height:16px; vertical-align:middle;"> <a href=''>Nebula </a> @ <a href='https://www.cs.columbia.edu/'>Columbia</a><br>
+    <img src="/assets/img/aueb-icon.png" alt="Columbia Icon" style="width:16px; height:16px; vertical-align:middle;"> <a href='https://www.balab.aueb.gr'>BALab</a> &nbsp;@ <a href='https://www.dept.aueb.gr/en/dmst'>AUEB</a><br>
+    <br>
     📍 CEPSR 6LW5<br>
     📧 <a id='email-link' href='#' onclick='event.preventDefault();'>Email me</a><br>
     <!-- and <a href='/assets/gpg'>gpg</a> -->
-    🔑 <a href='/assets/ssh'>ssh</a>  public keys<br>
+    🔑 <a href='/assets/ssh'>ssh</a>  public key<br>
     <br>
     📄 <a href='/assets/pdf/LiargkovasGeorgiosCV.pdf'>Curriculum Vitae</a><br>
     <br>
@@ -29,7 +30,7 @@
             <a href="{{ '/availability/' | relative_url }}" class="{% if page.url == '/availability/' %}active-permalink{% endif %}">Meeting Availability</a>
         </div>
         {% if page.permalink == '/' -%}
-        <br>
+
         <!-- <a href="#aboutme" data-target="aboutme">About me</a> |
         <a href="#news" data-target="news">News</a> |
         <a href="#research" data-target="research">Research</a>
