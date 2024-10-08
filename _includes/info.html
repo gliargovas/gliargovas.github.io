@@ -4,30 +4,31 @@
     font-weight: bold; /* Making the text bold */
     text-decoration: none; /* Removing underline from the link */
 }
+ 
 </style>
 
 <!-- profile-details.html -->
-<div class="profile-details">
+<div class="profile-details" style="margin:0px">
+    he/him<br>
     <b><b>PhD Student </b> @ <a href='https://cs.columbia.edu/'>Columbia</a><br>
-
     <b>Member of:</b><br>
-    <img src="/assets/img/columbia-icon.png" alt="Columbia Icon" style="width:16px; height:16px; vertical-align:middle;"> <a href=''>Nebula </a> @ <a href='https://www.cs.columbia.edu/'>Columbia</a><br>
+    <img src="/assets/img/columbia-icon.png" alt="Columbia Icon" style="width:16px; height:16px; vertical-align:middle;"> <a href=''>Nebula</a> @ <a href='https://www.cs.columbia.edu/'>Columbia</a><br>
     <img src="/assets/img/aueb-icon.png" alt="Aueb Icon" style="width:16px; height:16px; vertical-align:middle;"> <a href='https://www.balab.aueb.gr'>BALab</a> &nbsp;@ <a href='https://www.dept.aueb.gr/en/dmst'>AUEB</a><br>
-    <br>
+    <hr style="height: 12px; border: none; margin: 0px">
     📍 CEPSR 6LW5<br>
     📧 <a id='email-link' href='#' onclick='event.preventDefault();'>Email me</a><br>
     <!-- and <a href='/assets/gpg'>gpg</a> -->
     🔑 <a href='/assets/ssh'>ssh</a>  public key<br>
-    <br>
+    <hr style="height: 12px; border: none; margin: 0px">
     📄 <a href='/assets/pdf/LiargkovasGeorgiosCV.pdf'>Curriculum Vitae</a><br>
-    <br>
+    <hr style="height: 12px; border: none; margin: 0px">
     <!-- Adding navigation links below the email -->
     <div class="mini-nav">
         <div class="mini-nav">
             <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}active-permalink{% endif %}">About</a> |
             <a href="{{ '/publications/' | relative_url }}" class="{% if page.url == '/publications/' %}active-permalink{% endif %}">Publications</a> |
-            <a href="{{ '/blog/' | relative_url }}" class="{% if page.url == '/blog/' %}active-permalink{% endif %}">Blog</a>
-            <a href="{{ '/availability/' | relative_url }}" class="{% if page.url == '/availability/' %}active-permalink{% endif %}">Meeting Availability</a>
+            <a href="{{ '/blog/' | relative_url }}" class="{% if page.url == '/blog/' %}active-permalink{% endif %}">Blog</a><br>
+            <a href="{{ '/availability/' | relative_url }}" class="{% if page.url == '/availability/' %}active-permalink{% endif %}">Meeting Availability</a> 
         </div>
         {% if page.permalink == '/' -%}
 
@@ -40,7 +41,8 @@
         {% endif %}
     </div>
 </div>
-<br>
+<hr style="height: 12px; border: none; margin: 0px">
+
 
 
 <script type='text/javascript'>

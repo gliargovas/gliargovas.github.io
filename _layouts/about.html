@@ -21,7 +21,7 @@ layout: default
 
   .custom-content {
     margin-left: calc(50% - 150px); /* Aligns the start of the content */
-    width: 600px; /* Adjusts content width */
+    width: 630px; /* Adjusts content width */
     padding-left: 20px; /* Padding between profile and content */
     box-sizing: border-box;
   }
@@ -100,6 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
     color: blue;
     font-size: 16px;
   }
+
 </style>
 
 <div class="container">
@@ -115,8 +116,8 @@ document.addEventListener('DOMContentLoaded', function() {
     Pronunciation: '<b>Yor</b>-gos Li-ar-<b>go</b>-vas' - The 'G' in Georgios is pronounced like the 'Y' in 'Yes'.
   </div>
     <p class="desc">{{ page.subtitle }}</p>
-    <hr style="border-width: 3px; color: black;">
-    {% include figure.html style="width: 210px; border: 2px solid black;" path='assets/img/prof_pic.jpg' class='img-fluid' alt='profile pic' %}
+    <hr style="border-width: 3px; color: black; margin-bottom: 12px">
+    {% include figure.html style="width: 210px; margin-bottom: 0px; padding: 0px; border: 2px solid black;" path='assets/img/prof_pic.jpg' class='img-fluid' alt='profile pic' %}
     <div class="address" style="font-size:13.7px">
       {% include info.html %}
       <div class="contact-icons">
