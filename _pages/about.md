@@ -18,7 +18,7 @@ social: true  # includes social icons at the bottom of the page
 <h2 id="select-publications">About me</h2>
 <hr style="border-width: 2px;">
 
-I am a **PhD student** at the <a href="https://www.cs.columbia.edu/">Computer Science Department</a> of [Columbia University](https://www.cs.columbia.edu/), advised by [Prof. Kostis Kaffes](https://www.cs.columbia.edu/~kkaffes/index.html). My research focuses on enhancing **OS scheduling through the application of machine learning**.
+I am a **PhD student** at the <a href="https://www.cs.columbia.edu/">Computer Science Department</a> of [Columbia University](https://www.cs.columbia.edu/), advised by [Prof. Kostis Kaffes](https://www.cs.columbia.edu/~kkaffes/index.html). My research focuses on **enhancing operating system scheduling** by integrating **machine learning techniques** to improve **performance** and **efficiency** in **dynamic environments**.
 
 I hold a BSc. from the <a href='https://www.dept.aueb.gr/en/dmst'>Department of Management Science & Technology</a> of **Athens University of Economics and Business**. I am also a research associate at <a href='https://www.balab.aueb.gr'>BALab</a>, where I conduct software engineering research, advised by Prof. <a href='https://www2.dmst.aueb.gr/dds/index.el.html'>Diomidis Spinellis</a>.
 
