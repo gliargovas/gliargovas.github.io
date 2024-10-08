@@ -23,7 +23,7 @@ layout: default
     margin-right: 500px;
   }
 
-  .content {
+  .custom-content {
     margin-left: calc(50% - 150px); /* Aligns the start of the content */
     width: calc(50% + 200px); /* Adjusts content width */
     padding-left: 20px; /* Padding between profile and content */
@@ -46,12 +46,12 @@ layout: default
       width: 100%; /* Full width */
     }
 
-    .content {
+    .custom-content {
       margin: 0 auto; /* Center the content horizontally */
       width: 100%; /* Full width */
     }
 
-    .fixed-profile, .content {
+    .fixed-profile, .custom-content {
       position: static; /* Remove fixed positioning */
       width: 100%; /* Full width */
       margin-left: 0; /* Remove any margin */
@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function() {
       <br>
     </div>
   </div>
-  <article class="content">
+  <article class="custom-content">
     <section id="aboutme">
       {{ content }}
     </section>
