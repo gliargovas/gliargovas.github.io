@@ -26,24 +26,6 @@
       var runner = document.getElementById('running-emoji');
       var laptop = document.getElementById('laptop-emoji');
       var emojis = [runner, laptop]; // Array of emojis
-
-      navbar.addEventListener('mouseenter', function() {
-          if (Math.random() < 0.5) { // 50% chance to activate the emoji
-              var selectedEmoji = emojis[Math.floor(Math.random() * emojis.length)]; // Randomly pick an emoji
-              selectedEmoji.style.display = 'block'; // Show the selected emoji
-              selectedEmoji.style.animationName = ''; // Reset animation
-              setTimeout(function() { // Timeout to ensure animation can reset
-                  selectedEmoji.style.animationName = 'runAcross'; // Apply the animation
-              }, 10);
-
-              // Hide the emoji that is not selected
-              emojis.forEach(emoji => {
-                  if (emoji !== selectedEmoji) {
-                      emoji.style.display = 'none'; // Hide the other emoji
-                  }
-              });
-          }
-      });
   });
   </script>
 
