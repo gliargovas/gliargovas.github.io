@@ -1,35 +1,3 @@
-<style>
-  @keyframes runAcross {
-      0% { left: 0; opacity: 1; }
-      80% { left: 30%; opacity: 1; } /* 500px without fading */
-      100% { left: 35%; opacity: 0; } /* Fades away in the next 50px */
-  }
-
-  #running-emoji, #laptop-emoji {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      display: none;
-      animation-duration: 3s;
-      animation-timing-function: linear;
-      animation-fill-mode: forwards;
-  }
-
-  #running-emoji {
-      transform: translateY(-50%) scaleX(-1); /* Mirror the runner */
-  }
-</style>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-      var navbar = document.getElementById('navbar');
-      var runner = document.getElementById('running-emoji');
-      var laptop = document.getElementById('laptop-emoji');
-      var emojis = [runner, laptop]; // Array of emojis
-  });
-  </script>
-
-
 <header>
   {% if page.url contains '/blog' %}
   <!-- Nav Bar -->
