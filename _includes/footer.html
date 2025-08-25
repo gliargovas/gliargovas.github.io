@@ -6,7 +6,7 @@
         {%- endif -%}
         {%- if site.last_updated -%}
         All views here are my own and do not reflect the views of my employers or university: present, past, future.<hr style="height: 0px; border: none; margin: 0px">
-        Last updated: {{ "now" | date: '%B %d, %Y' }} |
+        Updated: {{ "now" | date: '%B %d, %Y' }} |
         &copy; Copyright {{ site.time | date: '%Y' }} {{ site.first_name }} {{ site.last_name }}. {{ site.footer_text }}
         {%- endif %}
       </div>
@@ -19,7 +19,7 @@
         <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
         {%- endif -%}
         {%- if site.last_updated -%}
-        Last updated: {{ "now" | date: '%B %d, %Y' }}.
+        Updated: {{ "now" | date: '%B %d, %Y' }}.
         {%- endif %}
       </div>
     </footer>

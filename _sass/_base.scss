@@ -1,3 +1,4 @@
+@use "variables" as *;
 /*******************************************************************************
  * Styles for the base elements of the theme.
  ******************************************************************************/
@@ -8,10 +9,43 @@ p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
   color: var(--global-text-color);
 }
 
+// Default readable text sizing
+p {
+  font-size: 1.083rem; // ~1pt larger than 16px base (down from 1.167rem)
+  line-height: 1.5;
+}
+
+// Apply same readable sizing to list items
+li {
+  font-size: 1.083rem;
+  line-height: 1.5;
+}
+
+// Personal section uses the same body typography even without <p> wrappers
+#personal {
+  font-size: 1.083rem;
+  line-height: 1.5;
+}
+
+// News list slightly smaller than body
+.news {
+  table {
+    td { font-size: 1.083rem; line-height: 1.5; }
+    th { font-size: 1rem !important; }
+  }
+}
+
 .custom-content {
   font-family: "Gill Sans";
   font-size: 0.92rem;
   line-height: 1.42;
+}
+
+.custom-content h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 hr {
@@ -29,9 +63,16 @@ table {
 
 a, table.table a {
   color: var(--global-theme-color);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.15em;
   &:hover {
     color: var(--global-theme-color);
     text-decoration: underline;
+  }
+  &:focus-visible {
+    outline: 2px dashed var(--global-theme-color);
+    outline-offset: 2px;
+    text-decoration: none;
   }
   &:hover:after :not(.nav-item.dropdown) {
     width: 100%;
@@ -262,7 +303,7 @@ footer.fixed-bottom {
     margin-top: 0;
 
     li {
-      width: 110%;
+      width: 100%;
       margin-bottom: 1rem;
       .preview {
         width: 100%;
@@ -407,4 +448,16 @@ code {
       padding: 8px;
     }
   }
+}
+
+article.custom-content h2#personal {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+article.custom-content h2#personal + hr {
+  border-width: 2px;
+  margin-top: 0.25rem;
+  margin-bottom: 0.75rem;
 }
