@@ -23,3 +23,5 @@ group :other_plugins do
     gem 'httparty'
     gem 'feedjira'
 end
+
+gem 'bundler', '~> 2.5'

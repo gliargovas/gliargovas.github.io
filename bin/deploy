@@ -94,6 +94,14 @@ git checkout -b $DEPLOY_BRANCH
 # Export JEKYLL_ENV=production
 export JEKYLL_ENV=production
 
+# Ensure a modern Bundler that supports default gems (e.g., 'uri')
+# Safe to run locally and in CI; ignore if already installed
+if ! bundler -v 2>/dev/null | grep -q "2\.5"; then
+  gem install bundler -v "~> 2.5" --no-document || true
+fi
+bundle update --bundler || true
+bundle install --jobs=4 --retry=3
+
 # Build site
 bundle exec jekyll build
 
