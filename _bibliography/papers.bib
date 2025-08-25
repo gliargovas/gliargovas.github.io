@@ -1,3 +1,26 @@
+@inproceedings{10.1145/3748355.3748363,
+author = {Sodhi, Prabhpreet Singh and Liargkovas, Georgios and Kaffes, Kostis},
+title = {Empowering machine-learning assisted kernel decisions with eBPFML},
+year = {2025},
+isbn = {9798400720840},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3748355.3748363},
+doi = {10.1145/3748355.3748363},
+abstract = {Machine-learning (ML) techniques can optimize core operating system paths---scheduling, I/O, power, and memory---yet practical deployments remain rare. Existing prototypes either (i) bake simple heuristics directly into the kernel or (ii) off-load inference to user space to exploit discrete accelerators, both of which incur unacceptable engineering or latency cost. We argue that eBPF, the Linux kernel's safe, hot-swappable byte-code runtime, is the missing substrate for moderately complex in-kernel ML. We present eBPFML, a design that (1) extends the eBPF instruction set with matrix-multiply helpers, (2) leverages upcoming CPU matrix engines such as Intel Advanced Matrix Extensions (AMX) through the eBPF JIT, and (3) retains verifier guarantees and CO-RE portability.},
+booktitle = {Proceedings of the 3rd Workshop on EBPF and Kernel Extensions},
+pages = {28–30},
+numpages = {3},
+keywords = {Operating systems, eBPF, hardware acceleration, machine learning},
+location = {Coimbra, Portugal},
+series = {eBPF '25},
+selected={true},
+abbr={eBPF '25},
+bibtex_show={true},
+doi={10.1145/3748355.3748363},
+}
+
+
 @INPROCEEDINGS{LKGV23,
   author={Liargkovas, Georgios and Kallas, Konstantinos and Greenberg, Michael and Nikos Vasilakis},
   journal={The 19th Workshop on Hot Topics in Operating Systems}, 
@@ -26,6 +49,7 @@
   bibtex_show={true},
 }
 
+
 @ARTICLE{liargkovas2023quieting,
   title={Quieting the Static: A Study of Static Analysis Alert Suppressions},
   author={Liargkovas, Georgios and Panourgia, Evangelia and Spinellis, Diomidis},
@@ -37,3 +61,4 @@
   selected={false},
   bibtex_show={true}
 }
+
