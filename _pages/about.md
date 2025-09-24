@@ -29,8 +29,8 @@ I’m part of Columbia’s <strong>Nebula</strong>  and <a href="https://daplab.
 
 <p>
 Previously, I was a research affiliate with the 
-<a href="https://atlas-group.cs.brown.edu/">Atlas Systems Group</a> at <a href="https://cs.brown.edu/">Brown University</a>, contributing to 
-<a href="https://binpa.sh">PaSh</a> and 
+<a href="https://atlas-group.cs.brown.edu/">Atlas Systems Group</a> at <a href="https://cs.brown.edu/">Brown University</a>, advised by <a href="https://nikos.vasilak.is/">Prof. Nikos Vasilakis</a>. I contributed to 
+<a href="https://binpa.sh">PaSh</a> and also developed 
 <code>hs</code>, an out-of-order shell script executor. 
 We also built <a src="https://github.com/binpash/try"><img src="https://img.shields.io/static/v1?label=binpash&message=try&color=blue&logo=github" alt="binpash - try"></a> <a href="https://github.com/binpash/try"><img src="https://img.shields.io/github/stars/binpash/try?style=social" alt="stars - try"></a>
 , a lightweight shell-based sandbox.
