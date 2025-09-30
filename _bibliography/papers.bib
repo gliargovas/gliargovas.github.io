@@ -10,7 +10,12 @@
   pdf={/assets/pdf/Liargkovas_ML4Sys_NeurIPS25.pdf},
   bibtex_show={true},
   doi={},
-}
+  abstract={Classical machine-learning auto-tuners for OS control struggle with semantic gaps, brittle rewards, and unsafe exploration. 
+We introduce an online, LLM-driven agent that emulates expert reasoning for continuous OS optimization. 
+When tuning the Linux Completely Fair Scheduler’s hyperparameters, the agent outperforms Bayesian optimization by 5\% in single-parameter tuning, 7.1\% in two-parameter co-tuning, and a human expert by 2.98\% overall, while converging faster and adapting more quickly to workload changes. 
+When application counters are unavailable, system-level proxies (e.g., Instructions Per Cycle (IPC)) preserved tail latency in our setup.
+Putting this together, we propose adopting the Model Context Protocol (MCP) for tool/resource discovery and invocation and a logging channel; on top of that, we propose adding transactional apply--commit--revert, host-mediated approval gates, and policy controls in the OS-tuning server and host to ensure safe, auditable operation. Our results and the proposed architecture point toward a new generation of self-adapting, expert-level OS tuners.}
+},
 
 @inproceedings{liargkovas2025proxy_tuning,
   title     = {Set It and Forget It: Zero-Mod ML Magic for Linux Tuning},
@@ -26,6 +31,11 @@
   pdf={/assets/pdf/Liargkovas_PACMI_25.pdf},
   bibtex_show={true},
   doi={10.1145/3766882.3767175},
+  abstract={Machine learning can turbocharge OS optimization---if one is willing to reinvent the whole stack. Recent work pushes exotic instrumentation or new OS designs that break real-world constraints, demanding app metrics nobody can (or wants to) provide. 
+The alternative---naively optimizing for simple system proxies like IPC---is just as flawed, leading to misleading results that fail to generalize across real-world workloads.
+Our framework sidesteps this dilemma by learning to optimize without direct visibility. 
+Instead of building brittle models to predict absolute performance, we reframe the problem to learn the relative ranking of system configurations, using a diversified performance signature built from the system counters the OS already has. 
+The outcome is a scalable, robust, and ML-driven performance boost for real applications---delivered without demanding radical shifts in the OS landscape.},
 }
 
 @inproceedings{10.1145/3748355.3748363,
@@ -62,6 +72,23 @@ pdf={https://dl.acm.org/doi/10.1145/3748355.3748363},
   doi={10.1145/3593856.3595891},
   bibtex_show={true},
   pdf={https://sigops.org/s/conferences/hotos/2023/papers/liargkovas.pdf},
+  abstract={Shell scripts are critical infrastructure for developers, administrators, and scientists; and ought to enjoy the performance
+benefits of the full suite of advances in compiler optimizations. But between the shell’s inherent challenges and neglect
+from the community, shell tooling and performance lags far
+behind the state of the art. We propose executing scripts
+out-of-order to better use modern computational resources.
+Optimizing any part of an arbitrary shell script is very challenging: the shell language’s complex, late-bound semantics
+makes extensive use of opaque external commands with
+arbitrary side effects.
+We work with the grain of the shell’s challenges, meeting
+dynamism with dynamism: we optimize at runtime, speculatively executing commands in an isolated and monitored
+environment to determine and contain their behavior. Our
+proposed approach can yield serious performance benefits
+(up to 3.9x for a bioinformatics script on a 16-core machine)
+for arbitrarily complex scripts without modifying their behavior. Contained out-of-order execution obviates the need
+for command specifications, operates on external commands,
+and yields a much more general framework for the shell.
+Script writers need not change a thing and observe no differences: they get improved performance with the interpretability of sequential output.}
 }
 
 
