@@ -21,3 +21,11 @@
 "Kaffes":
   - firstname: ["Kostis", "K."]
     url: https://www.cs.columbia.edu/~kkaffes/
+
+"Jabrayilov":
+  - firstname: ["Vahab", "V."]
+    url: https://vjabrayilov.github.io/
+
+"Franke":
+  - firstname: ["Hubertus", "H."]
+    url: https://www.linkedin.com/in/hubertus-franke/
