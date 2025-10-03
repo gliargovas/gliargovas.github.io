@@ -34,9 +34,18 @@
   - firstname: ["Naimeng", "N."]
     url: https://naimengye.github.io/
 
+"Ye*":
+  - firstname: ["Naimeng", "N."]
+    url: https://naimengye.github.io/
+
 "Lu":
   - firstname: ["Yunan", "Y."]
     url: https://www.linkedin.com/in/luyunan/
+
+"Lu*":
+  - firstname: ["Yunan", "Y."]
+    url: https://www.linkedin.com/in/luyunan/
+
 
 "Peng":
   - firstname: ["Tianyi", "T."]
