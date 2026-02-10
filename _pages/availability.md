@@ -3,7 +3,7 @@ layout: about
 permalink: /availability/
 title: availability
 description: 
-nav: true
+nav: false
 nav_order: 1
 ---
 
