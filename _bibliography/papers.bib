@@ -11,7 +11,35 @@
   bibtex_show = {true},
   selected  = {true},
   abstract  = {Despite growing interest in AI agents across industry and academia, their execution in an environment is often slow, hampering training, evaluation, and deployment. Inspired by speculative execution in microprocessors and speculative decoding in LLM inference, we propose speculative actions, a lossless framework that predicts likely actions using faster models, enabling multiple steps to be executed in parallel. We evaluate this framework across four agentic environments: gaming, e-commerce, web search, and operating systems. In all cases, speculative actions achieve substantial accuracy in next-action prediction, translating into significant reductions in end-to-end latency.},
-  note={🏆 Oral Presentation}
+  note={🏆 <strong>Oral</strong>, To appear}
+}
+
+@inproceedings{liargkovashs,
+  title       = {hS: Speculative Script Reordering at Subprocess Granularity},
+  author      = {Liargkovas*, Georgios and Jin*, Di and Zhu, Tianyu (Ezri) and Liu, Dan and Thompson, A. Bolun and Narsipur, Anirudh and Jung, Seong-Heon and Prasad, Siddhartha and Spinellis, Diomidis and Greenberg, Michael and Kallas, Konstantinos and Vasilakis, Nikos},
+  booktitle   = {USENIX Symposium on Operating Systems Design and Implementation (OSDI '26)},
+  year        = {2026},
+  abbr        = {OSDI '26},
+  url         = {https://www.usenix.org/conference/osdi26},
+  pdf         = {https://atlas.cs.brown.edu/pdf/hs:osdi:2026.pdf},
+  website     = {https://www.usenix.org/conference/osdi26},
+  bibtex_show = {true},
+  selected    = {true},
+  note        = {To appear},
+}
+
+@inproceedings{lamproucontrolling,
+  title       = {Controlling Opaque-Component Effects with Semisolates and Ef},
+  author      = {Lamprou, Evangelos and Zhu, Tianyu (Ezri) and Jin, Di and Ntousakis, Grigoris and Liargkovas, Georgios and Eng, Calvin and Kallas, Konstantinos and Greenberg, Michael and Vasilakis, Nikos},
+  booktitle   = {USENIX Symposium on Operating Systems Design and Implementation (OSDI '26)},
+  year        = {2026},
+  abbr        = {OSDI '26},
+  url         = {https://www.usenix.org/conference/osdi26},
+  pdf         = {https://atlas.cs.brown.edu/pdf/ef:osdi:2026.pdf},
+  website     = {https://www.usenix.org/conference/osdi26},
+  bibtex_show = {true},
+  selected    = {true},
+  note        = {To appear},
 }
 
 @inproceedings{liargkovas2025llm_tuning,
@@ -19,8 +47,7 @@
   author    = {Liargkovas, Georgios and Jabrayilov, Vahab and Franke, Hubertus and Kaffes, Kostis},
   booktitle = {ML for Systems Workshop at NeurIPS},
   year      = {2025},
-  url       = {https://mlforsystems.org/},
-  note      = {To appear},
+  url       = {https://openreview.net/forum?id=7dhlgPp8ni},
   selected={true},
   abbr={ML4Sys '25},
   pdf={Liargkovas_ML4Sys_NeurIPS25.pdf},
@@ -71,7 +98,7 @@ numpages = {3},
 keywords = {Operating systems, eBPF, hardware acceleration, machine learning},
 location = {Coimbra, Portugal},
 series = {eBPF '25},
-selected={true},
+selected={false},
 abbr={eBPF '25},
 bibtex_show={true},
 doi={10.1145/3748355.3748363},
@@ -84,10 +111,10 @@ pdf={https://dl.acm.org/doi/10.1145/3748355.3748363},
   journal={The 19th Workshop on Hot Topics in Operating Systems}, 
   title={Executing Shell Scripts in the Wrong Order, Correctly}, 
   year={2023},
-  selected={true},
+  selected={false},
   abbr={HotOS '23},
   doi={10.1145/3593856.3595891},
-  bibtex_show={true},
+  bibtex_show={false},
   pdf={https://sigops.org/s/conferences/hotos/2023/papers/liargkovas.pdf},
   abstract={Shell scripts are critical infrastructure for developers, administrators, and scientists; and ought to enjoy the performance
 benefits of the full suite of advances in compiler optimizations. But between the shell’s inherent challenges and neglect
@@ -136,4 +163,3 @@ Script writers need not change a thing and observe no differences: they get impr
   selected={false},
   bibtex_show={true}
 }
-

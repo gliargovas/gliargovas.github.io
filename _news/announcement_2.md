@@ -2,6 +2,7 @@
 layout: post
 date: 2022-08-17 00:00:00-0500
 inline: true
+tags: [paper]
 ---
 
 The Software Engineering Education Knowledge vs Industrial Needs paper gets Published in [IEEE Transactions on Education Volume: 65 Issue: 3](https://ieeexplore.ieee.org/document/9612087).

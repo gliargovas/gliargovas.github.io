@@ -2,6 +2,7 @@
 layout: about
 title: about
 permalink: /
+description: Georgios Liargkovas is a Columbia CS PhD student working on LLM agents, ML for systems, OS tuning, scheduling, and shell systems.
 subtitle:
 
 profile:
@@ -15,8 +16,7 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 
-<h2 id="select-publications">About me</h2>
-<hr style="border-width: 2px;">
+<h2 id="about-me">About Me</h2>
 
 
 <p>
@@ -44,3 +44,12 @@ Prof. <a href="https://www2.dmst.aueb.gr/dds/index.el.html">Diomidis Spinellis</
 <p>
 Today my work centers on <strong>agents for system optimization</strong> (e.g., LLM-driven parameter tuning and control) that blend robust systems abstractions with data-driven adaptation.
 </p>
+
+<div class="research-areas" aria-label="Research areas">
+  <span class="research-chip">Agentic Systems</span>
+  <span class="research-chip">LLM Agents</span>
+  <span class="research-chip">ML for Systems</span>
+  <span class="research-chip">OS Tuning</span>
+  <span class="research-chip">Scheduling</span>
+  <span class="research-chip">Shell</span>
+</div>
