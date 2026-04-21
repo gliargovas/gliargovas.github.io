@@ -51,5 +51,4 @@ Today my work centers on <strong>agents for system optimization</strong> (e.g., 
   <span class="research-chip">ML for Systems</span>
   <span class="research-chip">OS Tuning</span>
   <span class="research-chip">Scheduling</span>
-  <span class="research-chip">Shell</span>
 </div>
