@@ -276,7 +276,7 @@ blockquote {
   font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   flex: 1 1 auto;
   min-width: 0;
-  max-width: 1020px;
+  max-width: 1060px;
 }
 
 .custom-content p,
@@ -291,7 +291,7 @@ blockquote {
 }
 
 .custom-content.home-content {
-  max-width: 1050px;
+  max-width: 1090px;
 }
 
 .custom-content section + section {
@@ -801,15 +801,15 @@ footer.fixed-bottom {
 }
 
 .about-shell {
-  width: calc(100% + 100px);
-  max-width: calc(100% + 100px);
-  margin-right: -100px;
+  width: calc(100% + 140px);
+  max-width: calc(100% + 140px);
+  margin-right: -140px;
 }
 
 .about-shell.home-shell {
-  width: calc(100% + 130px);
-  max-width: calc(100% + 130px);
-  margin-right: -130px;
+  width: calc(100% + 170px);
+  max-width: calc(100% + 170px);
+  margin-right: -170px;
 }
 
 @media (min-width: 1001px) {
