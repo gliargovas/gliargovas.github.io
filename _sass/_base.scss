@@ -276,7 +276,7 @@ blockquote {
   font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   flex: 1 1 auto;
   min-width: 0;
-  max-width: 1080px;
+  max-width: 1055px;
   overflow-x: clip;
 }
 
@@ -292,7 +292,7 @@ blockquote {
 }
 
 .custom-content.home-content {
-  max-width: 1110px;
+  max-width: 1085px;
 }
 
 .custom-content section + section {
@@ -663,6 +663,10 @@ footer.fixed-bottom {
     text-transform: uppercase;
   }
 
+  &.selected-publications ol.bibliography li .periodical .publication-year {
+    display: none;
+  }
+
   ol.bibliography {
     list-style: none;
     padding: 0;
@@ -802,16 +806,16 @@ footer.fixed-bottom {
 }
 
 .about-shell {
-  width: calc(100% + 160px);
-  max-width: calc(100% + 160px);
-  margin-right: -160px;
+  width: calc(100% + 135px);
+  max-width: calc(100% + 135px);
+  margin-right: -135px;
   overflow-x: clip;
 }
 
 .about-shell.home-shell {
-  width: calc(100% + 190px);
-  max-width: calc(100% + 190px);
-  margin-right: -190px;
+  width: calc(100% + 165px);
+  max-width: calc(100% + 165px);
+  margin-right: -165px;
 }
 
 @media (min-width: 1001px) {
