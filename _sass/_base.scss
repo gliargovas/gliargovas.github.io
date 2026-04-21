@@ -816,28 +816,21 @@ footer.fixed-bottom {
   body.layout-about {
     overflow: hidden;
     padding-bottom: 0;
-    --about-footer-height: 52px;
   }
 
   body.layout-about .site-content-container {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 20px - var(--about-footer-height));
+    // Avoid CSS custom properties here: jekyll-minifier mangles them inside calc().
+    height: calc(100vh - 72px);
     min-height: 0;
   }
 
-  body.layout-about footer.sticky-bottom {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
+  body.layout-about footer.fixed-bottom {
     z-index: 20;
-    margin-top: 0 !important;
-    background: var(--global-bg-color);
-    border-top: 1px solid var(--global-divider-color);
   }
 
-  body.layout-about footer.sticky-bottom .container {
+  body.layout-about footer.fixed-bottom .container {
     padding-top: 0.55rem;
     padding-bottom: 0.55rem;
   }
