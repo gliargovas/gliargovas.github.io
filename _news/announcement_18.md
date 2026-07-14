@@ -5,4 +5,4 @@ inline: true
 tags: [paper]
 ---
 
-Two papers, ["hS: Speculative Script Reordering at Subprocess Granularity"](https://www.usenix.org/conference/osdi26) and ["Controlling Opaque-Component Effects with Semisolates and Ef."](https://www.usenix.org/conference/osdi26), were accepted to [OSDI '26](https://www.usenix.org/conference/osdi26)!
+Two papers, ["hS: Speculative Script Reordering at Subprocess Granularity"](https://www.usenix.org/conference/osdi26) and ["Controlling Opaque-Component Effects with Semisolates and try"](https://www.usenix.org/conference/osdi26), were accepted to [OSDI '26](https://www.usenix.org/conference/osdi26)!
